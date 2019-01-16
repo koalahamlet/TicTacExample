@@ -1,4 +1,4 @@
-package com.example.michaelhuff.deletemesoon;
+package com.example.michaelhuff.TicTacExample;
 
 import org.junit.Test;
 

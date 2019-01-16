@@ -1,8 +1,8 @@
-package com.example.michaelhuff.deletemesoon;
+package com.example.michaelhuff.TicTacExample;
 
 import java.util.Arrays;
 
-import static com.example.michaelhuff.deletemesoon.Constants.*;
+import static com.example.michaelhuff.TicTacExample.Constants.*;
 
 public class GameSystem {
 
@@ -15,7 +15,7 @@ public class GameSystem {
     // GameSystem, which takes a move, determines if it's valid, and notifies who won.
     public GameSystem(UpdateViewListener wonListener) {
         this.wonListener = wonListener;
-        Arrays.fill(board, ' ');
+        Arrays.fill(board, EMPTY);
         currentPlayer = playerX;
     }
 

@@ -1,4 +1,4 @@
-package com.example.michaelhuff.deletemesoon;
+package com.example.michaelhuff.TicTacExample;
 
 public class Constants {
     public static final char O = 'O';

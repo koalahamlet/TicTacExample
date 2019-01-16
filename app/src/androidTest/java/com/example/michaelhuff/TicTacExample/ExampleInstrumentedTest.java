@@ -1,4 +1,4 @@
-package com.example.michaelhuff.deletemesoon;
+package com.example.michaelhuff.TicTacExample;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

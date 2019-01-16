@@ -1,4 +1,4 @@
-package com.example.michaelhuff.deletemesoon;
+package com.example.michaelhuff.TicTacExample;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 
-import static com.example.michaelhuff.deletemesoon.Constants.*;
+import static com.example.michaelhuff.TicTacExample.Constants.*;
 
 class TicAdapter extends RecyclerView.Adapter<TicAdapter.CellViewHolder> {
 

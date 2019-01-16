@@ -1,4 +1,4 @@
-package com.example.michaelhuff.deletemesoon;
+package com.example.michaelhuff.TicTacExample;
 
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
@@ -15,11 +15,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements GameSystem.UpdateViewListener {
 
-
-    List<Cell> data;
-
     GameSystem newGame = new GameSystem(this);
-
     TextView winnerTextView;
 
     @Override
@@ -41,22 +37,12 @@ public class MainActivity extends AppCompatActivity implements GameSystem.Update
 
     @Override
     public void notifyWon(GameSystem.Player player) {
-        // updateUI
-        String wintext = "player " +player.letter+" won the game";
-        Toast.makeText(getApplicationContext(), wintext, Toast.LENGTH_LONG).show();
+        winnerTextView.setText("player " +player.letter+" won the game");
     }
 
     @Override
     public void updatePlayerName(char x) {
         winnerTextView.setText("Player "+x+"'s turn");
     }
-
-
-    public class Cell {
-
-        char currentState;
-
-    }
-
 
 }
