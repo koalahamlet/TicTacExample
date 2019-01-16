@@ -42,41 +42,49 @@ public class GameSystem {
                 // horizontal 012
                 if (board[0] == playerLetter && board[1] == playerLetter && board[2] == playerLetter) {
                     wonListener.notifyWon(currentPlayer);
+                    return true;
                 }
 
                 // horizontal 345
                 if (board[3] == playerLetter && board[4] == playerLetter && board[5] == playerLetter) {
                     wonListener.notifyWon(currentPlayer);
+                    return true;
                 }
 
                 // horizontal 678
                 if (board[6] == playerLetter && board[7] == playerLetter && board[8] == playerLetter) {
                     wonListener.notifyWon(currentPlayer);
+                    return true;
                 }
 
                 // vertical 036
                 if (board[0] == playerLetter && board[3] == playerLetter && board[6] == playerLetter) {
                     wonListener.notifyWon(currentPlayer);
+                    return true;
                 }
 
                 // vertical 147
                 if (board[1] == playerLetter && board[4] == playerLetter && board[7] == playerLetter) {
                     wonListener.notifyWon(currentPlayer);
+                    return true;
                 }
 
                 // vertical 258
                 if (board[2] == playerLetter && board[5] == playerLetter && board[8] == playerLetter) {
                     wonListener.notifyWon(currentPlayer);
+                    return true;
                 }
 
                 //diagonal 048
                 if (board[0] == playerLetter && board[4] == playerLetter && board[8] == playerLetter) {
                     wonListener.notifyWon(currentPlayer);
+                    return true;
                 }
 
                 //diagonal 246
                 if (board[2] == playerLetter && board[4] == playerLetter && board[6] == playerLetter) {
                     wonListener.notifyWon(currentPlayer);
+                    return true;
                 }
 
                 // switch player
